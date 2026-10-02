@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayAgate \
     LineageApertureOverlayAgate \
+    SettingsProviderResOverlayAgate \
+    SettingsResOverlayAgate \
     SystemUIOverlayAgate
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
