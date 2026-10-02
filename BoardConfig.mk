@@ -24,4 +24,9 @@ include device/xiaomi/mt6893-common/BoardConfigCommon.mk
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_nfc.xml
 
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
+-include vendor/halcyon/config/BoardConfigReservedSize.mk
+
+# Inherit the proprietary files
+-include device/xiaomi/miuicamera-agate/BoardConfig.mk
 include vendor/xiaomi/agate/BoardConfigVendor.mk
