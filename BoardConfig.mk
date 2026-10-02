@@ -22,6 +22,7 @@ VENDOR_SECURITY_PATCH := 2023-10-01
 include device/xiaomi/mt6893-common/BoardConfigCommon.mk
 # Kernel / DTB
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtb
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/modules/*.ko)
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
