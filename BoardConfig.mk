@@ -21,8 +21,6 @@ VENDOR_SECURITY_PATCH := 2023-10-01
 # Inherit from mt6893-common
 include device/xiaomi/mt6893-common/BoardConfigCommon.mk
 
-# VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_nfc.xml
 
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 -include vendor/halcyon/config/BoardConfigReservedSize.mk
